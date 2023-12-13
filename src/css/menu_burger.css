@@ -1,2 +1,23 @@
-
+.menu {
+    position: fixed; /*reste en place lors du défilement*/
+    top : 0; /*fixe le menu en haut de la page*/
+    left : 0;
+    width: 100vw; /*largeur de la fenêtre*/
+    height: 100vh; /*hauteur de la fenêtre*/
+    background: #fff; /*couleur de fond*/
+    display : grid; /*grille (pour centrer)*/
+    place-content: center; /*aligmement au centre (V et H) */
+  }
+  .header_burger {
+    position: relative; /*pour appliquer z-index*/
+    z-index: 10; /*pour que le bouton soit au dessus du menu*/
+  }
+ 
+  .lien_menu{
+    font-size: 40px;
+    line-height: 200%;
+  }
+  p{
+    width: 600px;
+  }
   
