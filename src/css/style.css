@@ -1,46 +1,9 @@
 @import "/src/fonts/variables.css";
 @import "/src/css/menu_burger.css";
-
+@import "/src/css/header.css";
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-}
-
-.header_titre{
-    font-size: 32px;
-    font-family: var(--montserrat);
-    color: var(--Blanc, #FFF);
-    text-align: center;
-    
-    
-}
-
-.header_bat{
-    width: 43px;
-    height: 43px;
-    margin-left: 20px;
-    
-}
-
-.header_burger{
-    width: 43px;
-    height: 43px;
-    margin-right: 20px;
-      
-}
-
-.header_principal{
-    background: var(--vert_clair);
-    width: 100%;
-}
-
-.header_nav{
-    min-height: 84px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-    
-}
+};

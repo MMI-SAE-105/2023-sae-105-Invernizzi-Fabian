@@ -4,7 +4,7 @@
     left : 0;
     width: 100vw; /*largeur de la fenêtre*/
     height: 100vh; /*hauteur de la fenêtre*/
-    background: #fff; /*couleur de fond*/
+    background: var(--vert_foncé); /*couleur de fond*/
     display : grid; /*grille (pour centrer)*/
     place-content: center; /*aligmement au centre (V et H) */
   }
@@ -13,11 +13,12 @@
     z-index: 10; /*pour que le bouton soit au dessus du menu*/
   }
  
-  .lien_menu{
+  .texte_menu{
     font-size: 40px;
     line-height: 200%;
+    text-decoration: none;
+    color: var(--blanc);
   }
-  p{
-    width: 600px;
-  }
+
+
   
