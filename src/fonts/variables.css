@@ -5,4 +5,24 @@
     --beige: #EEE7DA;
     --vert_clair: #AFC8AD;
     --vert_foncé: #88AB8E;
+
+    /* Text-size styles */
+    --header_main: 64px;
+    --header1: 40px;
+    --header2: 30px;
+    --header3: 24px;
+    --body1: 14px;
+    --button: 14px;
+    --legend_img: 12px;
+
+    /* Font-family styles */
+    --font-sans-serif: 'Roboto', sans-serif;
+    --font-serif: 'Montserrat', serif;
+
+    /* Espaces */
+    --espace1: 10px;
+    --espace2: 20px;
+    --espace3: 40px;
+    --espace4: 80px;
+    --espace5: 120px;
 }
