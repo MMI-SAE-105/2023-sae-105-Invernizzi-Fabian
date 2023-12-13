@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les chiens</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+      .menu {
+        position: fixed; /*reste en place lors du défilement*/
+        top : 0; /*fixe le menu en haut de la page*/
+        left : 0;
+        width: 100vw; /*largeur de la fenêtre*/
+        height: 100vh; /*hauteur de la fenêtre*/
+        background: #fff; /*couleur de fond*/
+        display : grid; /*grille (pour centrer)*/
+        place-content: center; /*aligmement au centre (V et H) */
+      }
+      .header_menuBtn {
+        position: relative; /*pour appliquer z-index*/
+        z-index: 10; /*pour que le bouton soit au dessus du menu*/
+      }
+      h1,h2,p,.lien_menu {
+      font-family:"montserrat", sans-serif;
+      }
+      .lien_menu{
+        font-size: 40px;
+        line-height: 200%;
+      }
+      p{
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn"
+      >
+        <img src="../public/icones/UisBars.svg" alt="menu burger">
+      </button>
+      
+      <nav 
+        id="mainNav" 
+        x-show="menuIsOpen" 
+        x-transition.duration.800ms.origin.top
+        class="menu"
+      >
+        <ul>
+          <li><a href="../index.html" class="lien_menu">Accueil</a></li>
+          <li><a href="../cats/index.html" class="lien_menu">Les Chats</a></li>
+          <li><a href="../dogs/index.html" class="lien_menu">Les Chiens</a></li>
+          
+        </ul>
+      </nav>
