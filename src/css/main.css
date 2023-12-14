@@ -122,3 +122,11 @@ list-style-type: none;
     padding: 0px 0px 150px 0px;
 }
 
+.frise_oeuvre{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.frise_oeuvre_date {
+    text-align: center;
+}
