@@ -1,0 +1,52 @@
+.contenu_footer_bloc{
+    flex: 1 0 auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 35px 0 100px;
+}
+
+footer{
+    flex-shrink: 0;
+    width: 100%;
+    background: var(--vert_foncé);
+    width: 100% ;
+}
+
+.footer_texte{
+    padding: 5px 0;
+    
+}
+
+.footer_titre{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.footer_logo{
+    width: 15%;
+    
+}
+
+.footer_bloc_informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0 5%;
+}
+
+.footer_bloc_contenus{
+ width: 30%;
+ 
+}
+
+.footer_contenus_contact{
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit;
+}
+

@@ -2,6 +2,7 @@
 @import "/src/css/menu_burger.css";
 @import "/src/css/header.css";
 @import "/src/css/normalize.css";
+@import "/src/css/footer.css";
 *{
     margin: 0;
     padding: 0;
