@@ -17,7 +17,7 @@ overflow: hidden;
 
  
 .link_menu{
-    font-size: var(--header1);
+    font-size: var(--header2);
     line-height: 250%;
     text-decoration: none;
     color: var(--blanc);

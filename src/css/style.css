@@ -3,6 +3,7 @@
 @import "/src/css/header.css";
 @import "/src/css/normalize.css";
 @import "/src/css/footer.css";
+@import "/src/css/main.css";
 *{
     margin: 0;
     padding: 0;
