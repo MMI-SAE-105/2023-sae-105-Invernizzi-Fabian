@@ -15,11 +15,12 @@
   }
  
   .texte_menu{
-    font-size: 40px;
+    font-size: var(--header3);
     line-height: 200%;
     text-decoration: none;
     color: var(--blanc);
   }
+
 .header_titre_menu{
 position: inherit;
 left: auto;
@@ -28,7 +29,7 @@ left: auto;
 
   .menu_logo {
    text-align: center;
-   width: 20%;
+   width: 15%;
   padding-top: 10%;
    
   }
