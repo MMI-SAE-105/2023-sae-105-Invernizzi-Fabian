@@ -23,3 +23,8 @@ header,main,footer{
 .titre_page_web{
 
 }
+
+.information_page{
+    font-size: 10px;
+    color: #5C636E;
+}
