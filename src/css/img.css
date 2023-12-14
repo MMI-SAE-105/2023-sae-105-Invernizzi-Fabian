@@ -14,3 +14,13 @@
 .img_beige{
     position: relative; 
 }
+
+.flèche_verte{
+    position: absolute;
+    z-index: -1; /* Ajout de cette ligne */
+    
+}
+
+.img_frise{
+    z-index: +1;
+}
