@@ -27,6 +27,7 @@ header{
 }
 
 .header_bat{
+    margin-top: 5px;
     width: 43px;
     height: 43px;
     margin-left: 20px;
@@ -53,5 +54,8 @@ header{
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    
+}
+
+.header_lien_logo{
+    width: 110px;
 }
