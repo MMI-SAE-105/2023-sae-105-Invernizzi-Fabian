@@ -7,6 +7,7 @@
     background: var(--vert_foncé); /*couleur de fond*/
     display : grid; /*grille (pour centrer)*/
     place-content: center; /*aligmement au centre (V et H) */
+    text-align: center;
   }
   .header_burger {
     position: relative; /*pour appliquer z-index*/
@@ -18,8 +19,18 @@
     line-height: 200%;
     text-decoration: none;
     color: var(--blanc);
-
   }
+.header_titre_menu{
+position: inherit;
+left: auto;
+}    
 
+
+  .menu_logo {
+   text-align: center;
+   width: 20%;
+  padding-top: 10%;
+   
+  }
 
   
