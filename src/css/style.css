@@ -4,6 +4,8 @@
 @import "/src/css/normalize.css";
 @import "/src/css/footer.css";
 @import "/src/css/main.css";
+@import "/src/css/img.css";
+@import "/src/css/bouton.css";
 *{
     margin: 0;
     padding: 0;
