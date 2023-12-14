@@ -10,31 +10,37 @@
 </head>
     
 <body>
-    <header class="header_principal">
-        <nav class="header_nav">
-            <img class="header_bat" src="/public/img/batiment_logo.png" alt="logo">
-            <h1 class="header_titre" id="header_t">Meier Expo</h1>
-            <img aria-controls="mainNav"
-            @click="menuIsOpen = ! menuIsOpen" 
-            class="header_burger" src="/public/img/menu-burger blanc 1.png" alt="">
-        </nav>
-        
-        <nav 
-        id="mainNav" 
-        x-show="menuIsOpen" 
-        x-transition.duration.800ms.origin.top
-        class="menu"
-      >
-        <ul>
-          <p><a href="/index.html" class="header_titre_menu">Meier Expo</a></p>
-          <p><a href="/Richard_Meier.html" class="texte_menu">Richard Meier</a></p>
-          <p><a href="/Frise.html" class="texte_menu">Frise des oeuvres</a></p>
-          <p><a href="" class="texte_menu">Billeterie</a></p>
-          <p><a href="/Contact.html" class="texte_menu">Contact</a></p>
-          <img src="/public/img/batiment_logo.png" alt="logo" class="menu_logo">
-        </ul>
-      </nav>
-    </header>
+  <header class="header_principal">
+    <nav class="header_nav">
+        <img class="header_bat" src="/public/img/batiment_logo.png" alt="logo">
+        <h1 class="header_titre" id="header_t">Meier Expo</h1>
+        <img aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen" 
+        class="header_burger" src="/public/img/menu-burger blanc 1.png" alt="">
+    </nav>
+    
+    <nav 
+    id="mainNav" 
+    x-show="menuIsOpen" 
+    x-transition.duration.800ms.origin.top
+    class="menu"
+  >
+  <p><a href="/index.html" class="menu_titre">Meier Expo</a></p>
+    
+    <div>
+      
+      <p><a href="/Richard_Meier.html" class="link_menu">Richard Meier</a></p>
+      <p><a href="/Frise.html" class="link_menu">Frise des oeuvres</a></p>
+      <p><a href="" class="link_menu">Billeterie</a></p>
+      <p><a href="/Contact.html" class="link_menu">Contact</a></p>
+    
+    </div>          
+    <a href="index.html">
+    <img src="/public/img/batiment_logo.png" alt="logo" class="menu_logo">
+    </a>
+
+  </nav>
+</header>
 <h1>Richard Meier</h1>
         <p>Publié le 13 / 12 / 2023, par Fabian Invernizzi</p>
     <body>

@@ -1,3 +1,8 @@
+.noscroll,
+.noscroll body {
+overflow: hidden;
+}
+
 .menu {
     position: fixed; /*reste en place lors du défilement*/
     top : 0; /*fixe le menu en haut de la page*/
@@ -9,28 +14,32 @@
     place-content: center; /*aligmement au centre (V et H) */
     text-align: center;
   }
-  .header_burger {
-    position: relative; /*pour appliquer z-index*/
-    z-index: 10; /*pour que le bouton soit au dessus du menu*/
-  }
+
  
-  .texte_menu{
-    font-size: var(--header3);
+  .link_menu{
+    font-size: var(--header2);
     line-height: 200%;
     text-decoration: none;
     color: var(--blanc);
   }
 
-.header_titre_menu{
-position: inherit;
-left: auto;
+.menu_titre{
+position: absolute;
+top: 2.5%;
+left: -100px; 
+font-size: var(--header3);
+    line-height: 200%;
+    text-decoration: none;
+    color: var(--blanc);
 }    
 
 
   .menu_logo {
-   text-align: center;
-   width: 15%;
-  padding-top: 10%;
+  bottom: 10%;
+  left: 42.5%;
+  width: 15%;
+  position: absolute;
+  
    
   }
 
