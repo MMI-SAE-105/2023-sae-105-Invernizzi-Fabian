@@ -17,7 +17,11 @@
 
 .flèche_verte{
     position: absolute;
-    z-index: -1; /* Ajout de cette ligne */
+    z-index: -1; 
+    width: 27%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
     
 }
 
