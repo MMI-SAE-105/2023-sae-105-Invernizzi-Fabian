@@ -38,8 +38,8 @@ header{
     width: 43px;
     height: 43px;
     margin-right: 20px;
-    position: relative; /*pour appliquer z-index*/
-    z-index: 10; /*pour que le bouton soit au dessus du menu*/  
+    position: relative; 
+    z-index: 10; 
       
 }
 

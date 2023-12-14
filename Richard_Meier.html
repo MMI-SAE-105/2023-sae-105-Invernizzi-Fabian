@@ -45,25 +45,106 @@
 </header>
 
     <main>
+      <img class="img_beige" src="public/img/Rectangle_beige_clair.png" alt="rectangle beige">
         <h1 class="titre_page_beige">Richard Meier</h1>
         <p class="information_page">Publié le 13 / 12 / 2023, par Fabian Invernizzi</p>
         <p class="paragraphe_basic">Richard Meier est un architecte américain connu pour ses créations modernes et innovantes. Il a créé de nombreux bâtiments célèbres à travers le monde, notamment des musées, des immeubles de bureaux et des résidences privées. </p>
-        <img src="/public/img/richard-meier-1986-1.webp" alt="Richard Meier">
-        <figcaption>Richard Meier (1986)</figcaption>
+        <img class="img_avec_légende" src="/public/img/richard-meier-1986-1.webp" alt="Richard Meier">
+        <figcaption class="légende_img">Richard Meier (1986)</figcaption>
 
-        <p>Le style de Meier présente souvent des lignes épurées, des surfaces blanches et beaucoup de lumière naturelle. </p>
-        <p>Son œuvre la plus connue est probablement le <strong>Getty Center</strong> de Los Angeles, un immense complexe abritant des collections d'art et des installations de recherche. </p>
+        <p class="paragraphe_basic">Le style de Meier présente souvent des lignes épurées, des surfaces blanches et beaucoup de lumière naturelle. </p>
+        <p class="paragraphe_basic">Son œuvre la plus connue est probablement le <strong>Getty Center</strong> de Los Angeles, un immense complexe abritant des collections d'art et des installations de recherche. </p>
     
         <img src="/public/img/getty-center-1997-1.webp" alt="Getty Center">
         <figcaption> Centre Getty</figcaption>
     
-        <p>Les créations de Richard Meier sont admirées pour leur beauté et leur fonctionnalité, et il continue d'être une figure très respectée dans le domaine de l'architecture.</p>
-    
-        <h1>Œuvres</h1>
+        <p class="paragraphe_basic">Les créations de Richard Meier sont admirées pour leur beauté et leur fonctionnalité, et il continue d'être une figure très respectée dans le domaine de l'architecture.</p>
+      
+        
+        <h2 class="titre_page_beige_secondaire">Œuvres</h1>
 
-        <p>Plongez-vous dans l'univers créatif de Richard Meier, figure emblématique de l'architecture.  De ses premières œuvres novatrices à ses réalisations emblématiques, parcourez un parcours unique à la croisée de la tradition et de la modernité.</p>
-    
-        <button>En savoir plus</button>
+      
+        <p class="paragraphe_basic">Plongez-vous dans l'univers créatif de Richard Meier, figure emblématique de l'architecture.  De ses premières œuvres novatrices à ses réalisations emblématiques, parcourez un parcours unique à la croisée de la tradition et de la modernité.</p>
+          
+
+        <div class="carrousel" x-data="{
+          hrefCourant: '#ecran-1',
+          }">
+              <button @click="parent =$refs.parent, parent.scrollLeft -= parent.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button><button @click="parent=$refs.parent, parent.scrollLeft += parent.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+              <div class="carrousel_parent-ecrans" x-ref="parent"
+                  @scroll.debounce.250ms.passive="
+              hrefCourant = '#'+
+                              [...$refs.parent.children]
+                              .find(e=>e.getBoundingClientRect().x>=0)
+                              .id
+                                                  "
+                  >
+                          <div id="ecran-1" class="carrousel_ecran">
+                      <figure>
+                          <img class="image" src="/public/img/athneum-newharmony-1976-1.webp" alt="image ecran 1">
+                          <figcaption class="soustitre">Atheneum, New Harmony, Indiana</figcaption>
+                      </figure>
+                  </div>
+                  <div id="ecran-2" class="carrousel_ecran">
+                      <figure>
+                          <img class="image" src="/public/img/eglise-rome-2000-1.webp" alt="image ecran 2">
+                          <figcaption class="soustitre"> Eglise de Tor Tre Teste, Rome</figcaption>
+                      </figure>
+                  </div>
+                  <div id="ecran-3" class="carrousel_ecran">
+                      <figure>
+                          <img class="image" src="/public/img/getty-center-1997-1.webp" alt="image ecran 3">
+                          <figcaption class="soustitre">Getty Center, Etats-Unis</figcaption>
+                      </figure>
+                  </div>
+                  <div id="ecran-4" class="carrousel_ecran">
+                      <figure>
+                          <img class="image" src="/public/img/giovannitti-house-1983-2.webp" alt="image ecran 4">
+                          <figcaption class="soustitre">Giovannitti House, Etats-Unis</figcaption>
+                      </figure>
+                  </div>
+                  <div id="ecran-5" class="carrousel_ecran">
+                      <figure>
+                          <img class="image" src="/public/img/musee-barcelone-1995-1.webp" alt="image ecran 5">
+                          <figcaption class="soustitre">Musée d'art contemporain, Barcelone </figcaption>
+                      </figure>
+                  </div>
+                  <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img class="image" src="/public/img/musee-frieder-burda-2004-1.webp" alt="image ecran 5">
+                        <figcaption class="soustitre">Collection Frieder Burda, Baden-Baden</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                  <figure>
+                      <img class="image" src="/public/img/musee-rolandseck-2007-1.webp" alt="image ecran 5">
+                      <figcaption class="soustitre">Musée d'art contemporain Rolandseck</figcaption>
+                  </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                  <figure>
+                      <img class="image" src="/public/img/smith-house-1967-1.webp" alt="image ecran 5">
+                      <figcaption class="soustitre">Smith House, Etats-Unis</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <ul class="caroussel_liste-liens">
+                  <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}"></a></li>
+                  <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}"></a></li>
+                  <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}"></a></li>
+                  <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}"></a></li>
+                  <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}"></a></li>
+                  <li><a href="#ecran-6" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-6'}"></a></li>
+                  <li><a href="#ecran-7" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-7'}"></a></li>
+                  <li><a href="#ecran-8" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-8'}"></a></li>
+              </ul>
+          </div>
+
+        <a class="bouton_lien" href="/Frise.html">
+        <div class="bouton_parent">
+        <button class="bouton_vert">En savoir plus</button>
+        </div>
+        </a>
     </main>
 
     <footer>

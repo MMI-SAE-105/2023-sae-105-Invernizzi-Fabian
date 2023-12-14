@@ -2,10 +2,15 @@
     text-align: center;
     font-size: 12px;
     color: #5C636E;
+    padding-bottom: 10px;
 }
 
 .img_avec_légende{
     margin-left: 10%;
     width: 75%;
     
+}
+
+.img_beige{
+    position: relative; 
 }

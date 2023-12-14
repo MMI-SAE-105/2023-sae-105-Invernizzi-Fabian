@@ -1,0 +1,105 @@
+img {
+    max-width: 100%;/* image responsive, largeur maxi */
+    height:auto;    /* hauteur "auto" */
+    scroll-snap-align: start; /* aligne les enfants par blocs */
+    }
+
+    .carrousel_parent-ecrans {
+    display: flex;/* aligne horizontalement les enfants */
+    width: 100%;/* largeur du parent */
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; /* permet de scroller par blocs */
+
+    }
+    .carrousel_ecran {
+    width: 100%;/* largeur du parent pour chaque enfant */
+    flex: none;/* permet de garder toute la largeur du parent */
+    }
+    .carrousel_ecran figure {
+    margin: 0;/* enlève les marges par défaut */
+    }
+    .carrousel {
+    position: relative;
+    }
+
+    .carrousel_btn {
+    position: absolute;
+    top: 50%;
+    top: calc(
+        min(500px, 100vw) / 16 * 9 / 2 + 1rem
+    ); /* centre verticalement ~50% vertical */
+    transform: translateY(-50%); /* methode du point mort */
+    width: 2rem;
+    height: 2rem;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    }
+
+    .carrousel_btn-avant {
+    left: 0;
+    }
+
+    .carrousel_btn-apres {
+    right: 0;
+    }
+
+    .caroussel_liste-liens {
+    display: flex; /* aligne horizontalement les enfants */
+    justify-content: center; /* centre horizontalement les enfants */
+    margin: 0; /* enlève les marges par défaut */
+    padding: 0; /* enlève les padding par défaut */
+    list-style: none; /* enlève les puces par défaut */
+    gap: 10px; /* espace entre les enfants */
+    }
+    .caroussel_lien.actif {
+        color: #4989d1; /* change the text color */ 
+        }
+
+    .image {
+    width: 500px;
+    height: 300px;
+    }
+    h1, .soustitre{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .caroussel_liste-liens {
+    margin-top: 20px;
+    }
+    .caroussel_liste-liens {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.caroussel_liste-liens a {
+text-decoration: none;
+color: #353434;
+font-size: 1.2em;
+margin-top: 20px;
+}
+
+
+.caroussel_liste-liens a {
+    
+    text-decoration: none;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 1px solid black;
+
+
+
+}
+
+.caroussel_liste-liens a.actif {
+background-color: rgb(163, 162, 162);
+}

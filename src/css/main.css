@@ -18,35 +18,63 @@ header,main,footer{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.titre_page_beige{
+    position: absolute;
+    top: 62px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--vert_foncé);
+    font-size: var(--header_main);
+    
+}
+
+.titre_page_beige_secondaire{
+    padding: 10px 0px 35px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--vert_foncé);
+    font-size: var(--header_main);
+    
+}
+
+
 .img_principale{
     filter: blur(1.5px);
 }
-.titre_page_web{
 
-}
 
 .information_page{
     font-size: 10px;
     color: #5C636E;
 }
 
+.Titre_paragraphe_basic{
+    font-weight: 400;
+    padding: 30px 15px 15px 20px;
+}
+
 .paragraphe_basic{
     font-size: 14px;
-    padding-top: 30px;
+    padding-top: 5px;
     padding-bottom: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .Liste_Titre{
     font-weight: 400;
     padding-bottom: 15px;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .Liste_groupe{
 padding-bottom: 30px;
-padding-left: 15px;
+padding-left: 20px;
+padding-right: 20px;
 list-style-type: none;
 }
 
@@ -68,4 +96,8 @@ list-style-type: none;
 
 .citation_auteur{
     text-align: right; /* Ajout de cette ligne */
+}
+
+.information_page{
+    padding-bottom: 15px;
 }
