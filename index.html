@@ -12,7 +12,9 @@
 <body>
     <header class="header_principal">
         <nav class="header_nav">
+            
             <img class="header_bat" src="/public/img/batiment_logo.png" alt="logo">
+            
             <h1 class="header_titre" id="header_t">Meier Expo</h1>
             <img aria-controls="mainNav"
             @click="menuIsOpen = ! menuIsOpen" 
@@ -55,45 +57,53 @@
         <figcaption class="légende_img">Richard Meier</figcaption>
         
     </figure>
-        <button>Informations sur R. Meier</button>
-
-        <div>
-            <p>“Je pense que le blanc est la couleur la plus merveilleuse de toutes, car on y retrouve toutes les couleurs de l’arc-en-ciel.” </p>
-            <p>Richard Meier</p>
+    <a class="bouton_lien" href="/Richard_Meier.html">
+        <div class="bouton_parent">
+        <button class="bouton_vert">Informations sur R. Meier</button>
+        </div>
+    </a>
+        <div class="citation_groupe">
+            <p class="citation">“Je pense que le blanc est la couleur la plus merveilleuse de toutes, car on y retrouve toutes les couleurs de l’arc-en-ciel.” </p>
+            <p class="citation_auteur">Richard Meier</p>
         </div>
 
         <p class="paragraphe_basic">Cette exposition vous proposera une expérience immersive à travers les époques et les styles qui ont marqué la carrière exceptionnelle de l'architecte.</p>
 
         <section>
-        <h2>Meier Expo</h2>
-        <p class="paragraphe_basic">L’évènement aura lieu du <strong>13 Avril</strong> au <strong>23 Juin 2024</strong></p>
-        <p class="paragraphe_basic">Adresse de déroulement : <strong>Fondation Cartier, 
-            261 Bd Raspail, 75014 Paris</strong></p>
+        <h2 class="Liste_Titre">Meier Expo</h2>
+        <ul class="Liste_groupe">
+        <li class="Liste_seule">L’évènement aura lieu du <strong>13 Avril</strong> au <strong>23 Juin 2024</strong></li>
+        <li class="Liste_seule">Adresse de déroulement : <strong>Fondation Cartier, 
+            261 Bd Raspail, 75014 Paris</strong></li>
+        </ul>
         </section>
 
 
         <section>
-            <h2>Horaires</h2>
-            <ul>
-                <li>Tous les jours de <strong>11h à 20h</strong>, sauf le <strong>lundi</strong></li>
-                <li>Nocturne le mardi, jusqu'à 22h</li>
-                <li>La fermeture des salles débutes à 19h45 (21h45 les mardis) </li>
-                <li>Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de prese, carte d’invalidité, Fondation Cartier Pass, Etudiants | <strong>Gratuit</strong></li>
+            <h2 class="Liste_Titre">Horaires</h2>
+            <ul class="Liste_groupe">
+                <li class="Liste_seule">Tous les jours de <strong>11h à 20h</strong>, sauf le <strong>lundi</strong></li>
+                <li class="Liste_seule">Nocturne le mardi, jusqu'à 22h</li>
+                <li class="Liste_seule">La fermeture des salles débutes à 19h45 (21h45 les mardis) </li>
             </ul>
         </section>
 
         <section>
-            <h2>Tarifs</h2>
-            <ul>
-                <li>Plein tarif | <strong>11€</strong></li>
-                <li>Tarif réduit | <strong>7,50€</strong></li>
-                <li>Réduction 13-25 ans | <strong>18€ - 50€</strong></li>
-                <li>Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de prese, carte d’invalidité, Fondation Cartier Pass, Etudiants | <strong>Gratuit</strong></li>
+            <h2 class="Liste_Titre">Tarifs</h2>
+            <ul class="Liste_groupe">
+                <li class="Liste_seule">Plein tarif | <strong>11€</strong></li>
+                <li class="Liste_seule">Tarif réduit | <strong>7,50€</strong></li>
+                <li class="Liste_seule">Réduction 13-25 ans | <strong>18€ - 50€</strong></li>
+                <li class="Liste_seule">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de prese, carte d’invalidité, Fondation Cartier Pass, Etudiants | <strong>Gratuit</strong></li>
             </ul>
         </section>
 
-
-        <button>Billeterie</button>
+        <a class="bouton_lien" href="Billeterie.html">
+            <div class="bouton_parent">
+            <button class="bouton_vert">Billeterie</button>
+            </div>
+        </a>
+    
     </main>
 
     <footer>

@@ -15,6 +15,7 @@ header,main,footer{
     align-items: center;
     color: var(--Blanc, #FFF);
     font-size: var(--header_main);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .img_principale{
@@ -31,8 +32,40 @@ header,main,footer{
 
 .paragraphe_basic{
     font-size: 14px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.Liste_Titre{
+    font-weight: 400;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.Liste_groupe{
+padding-bottom: 30px;
+padding-left: 15px;
+list-style-type: none;
+}
+
+.Liste_seule{
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+
+.citation{
+    padding-bottom: 15px;
+
+}
+
+.citation_groupe{
+    padding: 30px 30px 25px 30px;
+    background-color: var(--beige);
+    
+}
+
+.citation_auteur{
+    text-align: right; /* Ajout de cette ligne */
 }

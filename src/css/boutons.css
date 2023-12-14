@@ -1,0 +1,33 @@
+.bouton_vert{
+    display: flex;
+    width: 200px;
+    height: 70px;
+    padding: 18px 41px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: var(--Vert-fonc, #88AB8E);
+    color: var(--Blanc, #FFF);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--montserrat);
+    border: none;
+    z-index: 1;
+    
+    
+}
+
+.bouton_parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    
+}
+
+.bouton_lien{
+    text-decoration: none;
+   
+}
