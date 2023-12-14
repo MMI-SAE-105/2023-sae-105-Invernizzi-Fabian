@@ -16,9 +16,9 @@
     --legend_img: 12px;
 
     /* Font-family styles */
-    --Roboto: 'Roboto', sans-serif;
-    --Montserrat: 'Montserrat', serif;
-    --Montserrat_strong: 'Montserrat_strong', serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --Roboto: 'Roboto Mono', monospace;
+    
 
     /* Espaces */
     --espace1: 10px;
