@@ -16,25 +16,25 @@ overflow: hidden;
   }
 
  
-  .link_menu{
-    font-size: var(--header2);
-    line-height: 200%;
+.link_menu{
+    font-size: var(--header1);
+    line-height: 250%;
     text-decoration: none;
     color: var(--blanc);
   }
 
 .menu_titre{
-position: absolute;
-top: 2.5%;
-left: -100px; 
-font-size: var(--header3);
+    position: absolute;
+    top: 2.5%;
+    left: -100px; 
+    font-size: var(--header3);
     line-height: 200%;
     text-decoration: none;
     color: var(--blanc);
 }    
 
 
-  .menu_logo {
+.menu_logo {
   bottom: 10%;
   left: 42.5%;
   width: 15%;
