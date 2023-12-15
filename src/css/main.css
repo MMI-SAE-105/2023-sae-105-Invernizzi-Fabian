@@ -43,6 +43,18 @@ header,main,footer{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.titre_page_sur_oeuvre3{
+    position: absolute;
+    top: 65px;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--Blanc, #FFF);
+    font-size: var(--header_main);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 
 .titre_page_beige{
     position: absolute;
@@ -128,7 +140,7 @@ list-style-type: none;
 .citation_groupe{
     padding: 30px 30px 25px 30px;
     background-color: var(--beige);
-    
+    margin-bottom: 25px;
 }
 
 .citation_auteur{
