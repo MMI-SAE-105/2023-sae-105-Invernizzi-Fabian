@@ -8,6 +8,7 @@
 @import "/src/css/boutons.css";
 @import "/src/css/carrousel.css";
 @import "/src/css/contact.css";
+@import "/src/css/404.css";
 *{
     margin: 0;
     padding: 0;

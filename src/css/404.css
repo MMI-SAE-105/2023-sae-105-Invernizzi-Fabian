@@ -1,0 +1,19 @@
+.bouton_404{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+.bouton_404:hover {
+    background-color: #0056b3;
+}
+.bouton_parent_404{
+
+}
+
+.bouton_lien_404{}
