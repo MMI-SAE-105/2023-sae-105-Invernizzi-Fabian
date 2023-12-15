@@ -18,6 +18,8 @@ header,main,footer{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+
+
 .titre_page_sur_oeuvre{
     position: absolute;
     top: 90px;
@@ -29,6 +31,18 @@ header,main,footer{
     font-size: var(--header_main);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.titre_page_sur_oeuvre2{
+    position: absolute;
+    top: 125px;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--Blanc, #FFF);
+    font-size: var(--header_main);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 
 .titre_page_beige{
     position: absolute;
