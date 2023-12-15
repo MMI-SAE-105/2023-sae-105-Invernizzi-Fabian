@@ -67,14 +67,22 @@ header,main,footer{
     
 }
 
-.titre_page_beige_secondaire{
+.titre_vert{
     padding: 10px 0px 35px 0px;
     text-align: center;
     justify-content: center;
     align-items: center;
     color: var(--vert_foncé);
     font-size: var(--header_main);
-    
+}
+
+.titre_vert_biographie{
+    padding: 10px 0px 35px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--vert_foncé);
+    font-size: 40px;
 }
 
 .titre_page_beige_3{
@@ -168,3 +176,12 @@ list-style-type: none;
 .frise_oeuvre_date {
     text-align: center;
 }
+
+.bloc_biographie{
+    display : flex;
+}
+
+.accordéon_onglet{
+    margin-bottom: 250px;
+}
+

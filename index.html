@@ -69,34 +69,70 @@
 
         <p class="paragraphe_basic">Cette exposition vous proposera une expérience immersive à travers les époques et les styles qui ont marqué la carrière exceptionnelle de l'architecte.</p>
 
-        <section>
-        <h2 class="Liste_Titre">Meier Expo</h2>
-        <ul class="Liste_groupe">
-        <li class="Liste_seule">L’évènement aura lieu du <strong>13 Avril</strong> au <strong>23 Juin 2024</strong></li>
-        <li class="Liste_seule">Adresse de déroulement : <strong>Fondation Cartier, 
-            261 Bd Raspail, 75014 Paris</strong></li>
-        </ul>
-        </section>
 
+        <section class="accordéon_onglet">   
+        <div class= "all_button" id="onglets" x-data="{ouvert :1}">
 
-        <section>
-            <h2 class="Liste_Titre">Horaires</h2>
-            <ul class="Liste_groupe">
-                <li class="Liste_seule">Tous les jours de <strong>11h à 20h</strong>, sauf le <strong>lundi</strong></li>
-                <li class="Liste_seule">Nocturne le mardi, jusqu'à 22h</li>
-                <li class="Liste_seule">La fermeture des salles débutes à 19h45 (21h45 les mardis) </li>
+            <ul class="groupe_bouton" role="tablist">
+              <button role="tab" :class="{actif:ouvert === 1,}" class="button" @click="ouvert=1">Informations</button></li>
+              <button role="tab" :class="{actif:ouvert === 2,}" class="button" @click="ouvert=2">Horaires</button></li>
+              <button role="tab" :class="{actif:ouvert === 3,}" class="button" @click="ouvert=3">Tarifs</button></li>
             </ul>
+      
+          <div class="parents">
+      
+            <div role="tabpanel" :class="{actif:ouvert === 1,}">
+              <h1 class="sous_titre">Informations</h1>
+              <section>
+                <h2 class="Liste_Titre">Meier Expo</h2>
+                <ul class="Liste_groupe">
+                <li class="Liste_seule">L’évènement aura lieu du <strong>13 Avril</strong> au <strong>23 Juin 2024</strong></li>
+                <li class="Liste_seule">Adresse de déroulement : <strong>Fondation Cartier, 
+                    261 Bd Raspail, 75014 Paris</strong></li>
+                </ul>
+                </section>  
+            
+            </div>
+      
+            <div role="tabpanel" :class="{actif:ouvert === 2,}">
+              <h1 class="sous_titre">Horaires</h1>
+                  <section>
+    
+                <ul class="Liste_groupe">
+                    <li class="Liste_seule">Tous les jours de <strong>11h à 20h</strong>, sauf le <strong>lundi</strong></li>
+                    <li class="Liste_seule">Nocturne le mardi, jusqu'à 22h</li>
+                    <li class="Liste_seule">La fermeture des salles débutes à 19h45 (21h45 les mardis) </li>
+                </ul>
+            </section>
+              
+            </div>
+      
+            <div role="tabpanel" :class="{actif:ouvert === 3,}">
+              <h1 class="sous_titre">Tarifs</h1>
+              <section>
+                <ul class="Liste_groupe">
+                    <li class="Liste_seule">Plein tarif | <strong>11€</strong></li>
+                    <li class="Liste_seule">Tarif réduit | <strong>7,50€</strong></li>
+                    <li class="Liste_seule">Réduction 13-25 ans | <strong>18€ - 50€</strong></li>
+                    <li class="Liste_seule">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de prese, carte d’invalidité, Fondation Cartier Pass, Etudiants | <strong>Gratuit</strong></li>
+                </ul>
+            </section>
+      
+            </div>
+      
+            </div>
+          </div>
+      
         </section>
 
-        <section>
-            <h2 class="Liste_Titre">Tarifs</h2>
-            <ul class="Liste_groupe">
-                <li class="Liste_seule">Plein tarif | <strong>11€</strong></li>
-                <li class="Liste_seule">Tarif réduit | <strong>7,50€</strong></li>
-                <li class="Liste_seule">Réduction 13-25 ans | <strong>18€ - 50€</strong></li>
-                <li class="Liste_seule">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de prese, carte d’invalidité, Fondation Cartier Pass, Etudiants | <strong>Gratuit</strong></li>
-            </ul>
-        </section>
+
+
+        
+
+
+        
+
+        
 
         <a class="bouton_lien" href="Billeterie.html">
             <div class="bouton_parent">

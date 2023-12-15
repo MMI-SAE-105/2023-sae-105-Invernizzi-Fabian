@@ -1,0 +1,52 @@
+
+      .parents {
+        position: relative;
+      }
+      [role ="tabpanel"]{
+        position: absolute;
+        opacity: 0;
+      }
+      [role ="tabpanel"].actif{
+        opacity: 1;
+      }
+      
+      .button {
+    background-color: #dad8d8;
+    border: none;
+    color: rgb(83, 81, 81);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    width: 100px;
+    border: 2px solid #88AB8E;
+    width: 110px;
+    height: 60px;
+    }
+    
+    .sous_titre{
+      text-align: center;
+  
+    }
+
+    
+
+    .button:hover {
+        background-color: #a3a5a3;
+
+    }
+    p, button, h1{
+            font-family: 'Montserrat', sans-serif;
+    }
+
+    .titre_principal{
+      padding-left: 440px;
+    }
+
+    .groupe_bouton{
+      margin-left : 20px
+    }

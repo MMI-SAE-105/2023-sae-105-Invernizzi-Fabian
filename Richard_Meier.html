@@ -49,9 +49,10 @@
         <h1 class="titre_page_beige">Richard Meier</h1>
         <p class="information_page">Publié le 13 / 12 / 2023, par Fabian Invernizzi</p>
         <p class="paragraphe_basic">Richard Meier est un architecte américain connu pour ses créations modernes et innovantes. Il a créé de nombreux bâtiments célèbres à travers le monde, notamment des musées, des immeubles de bureaux et des résidences privées. </p>
+        <figure>
         <img class="img_avec_légende" src="/public/img/richard-meier-1986-1.webp" alt="Richard Meier">
         <figcaption class="légende_img">Richard Meier (1986)</figcaption>
-
+        </figure>
         <p class="paragraphe_basic">Le style de Meier présente souvent des lignes épurées, des surfaces blanches et beaucoup de lumière naturelle. </p>
         <p class="paragraphe_basic">Son œuvre la plus connue est probablement le <strong>Getty Center</strong> de Los Angeles, un immense complexe abritant des collections d'art et des installations de recherche. </p>
     
@@ -59,13 +60,32 @@
         <figcaption class="légende_img"> Centre Getty</figcaption>
     
         <p class="paragraphe_basic">Les créations de Richard Meier sont admirées pour leur beauté et leur fonctionnalité, et il continue d'être une figure très respectée dans le domaine de l'architecture.</p>
-      
         
-        <h2 class="titre_page_beige_secondaire">Œuvres</h1>
+        
+        <section  x-data="{open:false}">
+          <div class="bloc_biographie">
+          <h2 class="titre_vert_biographie" @click="open=!open">Biographie</h2>
+          <img class="img_doigt" src="public/img/curseur-doigt.png" alt="doigt">
+          </div>
+          <span x-show="open" x-transition>
+          
+          <p class="paragraphe_basic">Richard Meier naît dans une famille juive, il est l'aîné des trois fils de Carolyn Kaltenbacher et Jerome Meier vendeur en gros de vin et d'alcool.</p>
+          <p class="paragraphe_basic">Une fois son diplôme de la Cornell University en poche, il visite l'Italie, la Grèce, l'Israël, la France, l'Allemagne, il travailla ensuite chez Skidmore puis pour Marcel Breuer.</p>
+          <p class="paragraphe_basic">Ce n'est qu'en 1963 qu'il crée son agence dans son appartement de New York du nom de « Richard Meier & Parteners », sa première commande étant une maison pour ses parents à Essex Fells dans le New Jersey.</p>
+          <img class="img_avec_légende2" src="public/img/Richard_Meier_n&b.webp" alt="">
+          <p class="paragraphe_basic">En parallèle à son activité d'architecte, il enseigne à la Cooper Union (1962-1973), à Yale (1975-1977) puis à Harvard (1980-1981). Richard Meier est l'auteur de plusieurs maisons particulières dont la célèbre « Douglas House » à Harbor Springs (1973), somptueuse demeure qui surplombe le lac Michigan. Son travail sur la lumière, la couleur blanche, l'espace et la forme le rapproche de Le Corbusier.</p>
+          <p class="paragraphe_basic">Il s'est forgé une solide réputation en matière muséographique. Il construit pour la première fois en France en 1989, à l'issue du concours pour la réalisation du siège de Canal+, quai André-Citroën.
+
+            Il obtient le prix Pritzker en 1984, et exerce dans le cadre de l'agence « Richard Meier & Partners ».</p>
+        </span>
+        </section>
+      
+        <h2 class="titre_vert">Œuvres</h2>
 
       
         <p class="paragraphe_basic">Plongez-vous dans l'univers créatif de Richard Meier, figure emblématique de l'architecture.  De ses premières œuvres novatrices à ses réalisations emblématiques, parcourez un parcours unique à la croisée de la tradition et de la modernité.</p>
           
+        
 
         <div class="carrousel" x-data="{
           hrefCourant: '#ecran-1',
