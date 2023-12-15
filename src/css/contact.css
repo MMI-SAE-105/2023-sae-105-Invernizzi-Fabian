@@ -1,0 +1,21 @@
+.contact_case{
+    height: 50px; /* Ajustez cette valeur pour changer la taille de la case */
+    z-index: 1;
+}
+
+.contact_bloc{
+    padding: 0px 20px 30px 20px;
+    z-index: 0;
+}
+
+.contact_titre{
+    padding-bottom: 5px;
+}
+
+.contact_case_message{
+   height: 150px; 
+   
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
