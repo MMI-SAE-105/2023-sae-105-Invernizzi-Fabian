@@ -18,11 +18,14 @@
 }
 
 .bouton_parent_404{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .bouton_lien_404{
-
+    text-decoration: none;
 }
 
 .paragraphe_basic_404{
