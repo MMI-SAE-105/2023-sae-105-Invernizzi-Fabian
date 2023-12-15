@@ -11,7 +11,7 @@
 footer{
     
     flex-shrink: 0;
-    width: 100%;
+    
     background: var(--vert_foncé);
     font-family: var(--montserrat);
     

@@ -3,14 +3,13 @@ main {
 }
 header,main,footer{
     font-family: var(--montserrat);
-    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .titre_page_sur_image{
     position: absolute;
     top: 145px;
-    width: 100%;
-    height: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -22,8 +21,7 @@ header,main,footer{
 .titre_page_sur_oeuvre{
     position: absolute;
     top: 90px;
-    width: 100%;
-    height: 100%;
+    
     text-align: center;
     justify-content: center;
     align-items: center;
